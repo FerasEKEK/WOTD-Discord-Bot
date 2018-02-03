@@ -1,1 +1,1 @@
-worker node wotdbot.js
+worker: node wotdbot.js
