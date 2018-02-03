@@ -43,7 +43,7 @@ function readTextFile() {
 
 logger.level = 'debug';
 // Initialize Discord Bot
-var bot =  var bot = new Discord.Client({
+var bot = new Discord.Client({
    token: process.env.BOT_TOKEN,
    autorun: true
 });
