@@ -1,0 +1,16 @@
+{
+  "name": "word-of-the-day-bot",
+  "version": "1.0.0",
+  "description": "Bot that gets a word of the day from https://www.merriam-webster.com/word-of-the-day daily at 8:00 am",
+  "main": "wotdbot.js",
+  "scripts": {
+    "start": "node wotdbot.js"
+  },
+  "author": "Firas Al Khatib Al Khalidi",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "jsdom": "^11.6.2",
+    "winston": "^2.4.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
