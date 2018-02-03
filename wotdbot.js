@@ -73,4 +73,4 @@ bot.on('ready', function (evt) {
 }, 60000);
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.run(process.env.BOT_TOKEN);
