@@ -54,7 +54,7 @@ bot.on('ready', function (evt) {
     setInterval(function(){ // Set interval for checking
 	    var date = new Date(); // Create a Date object to find out what time it is
 	    logger.info("Code ran:" + date.getHours() + ":" + date.getMinutes());
-	    if(date.getHours() === 10 && date.getMinutes() === 0){ // Check the time
+	    if(date.getHours() === 6 && date.getMinutes() === 0){ // Check the time
 	        const dom = new JSDOM(httpGet("https://www.merriam-webster.com/word-of-the-day"));
 	        var div = dom.window.document.querySelector("div.word-and-pronunciation");  
 	        var word = div.querySelector("h1").textContent; 
