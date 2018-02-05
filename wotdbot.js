@@ -48,7 +48,7 @@ var bot = new Discord.Client({
    autorun: true
 });
 bot.on('ready', function (evt) {
-    bot.user.setUsername("MyNewUsername");
+    bot.setUsername("WodOfDaDayMan");
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
