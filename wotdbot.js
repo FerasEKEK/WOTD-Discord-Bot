@@ -65,13 +65,12 @@ bot.on('ready', function (evt) {
 	        var pronunciation = div.querySelector("span.word-syllables").textContent
 	        div = dom.window.document.querySelector("div.wotd-examples");
 	        var example = div.querySelector("p").textContent;
-	        var fullText = "WOTD " + readTextFile() + "**" + word + "** *" + type + "* | *" + pronunciation + "*\nDefinition" + definition + "\nExample: " + example;
+	        var fullText = "Word of the day:\n" + "**" + word + "** *" + type + "* | *" + pronunciation + "*\nDefinition" + definition + "\nExample: " + example;
 	        logger.info(fullText);
 	        bot.sendMessage({
 	            to: '409029349501566978',
 	            message: fullText
 	        });
-	        updateTextFile();
 	    }
 }, 60000);
 });
